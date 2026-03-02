@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/sessions")
+@CrossOrigin("*")
 public class SessionController {
 
     private final OpenVidu openVidu;

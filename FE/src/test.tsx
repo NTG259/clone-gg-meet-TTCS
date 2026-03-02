@@ -2,7 +2,7 @@ import { OpenVidu } from "openvidu-browser";
 
 const OV = new OpenVidu(); const session = OV.initSession();
 export async function joinRoom() {
-    const roomName = "test";
+    const roomName = "testabcd";
     await fetch(`http://100.90.25.32:8080/api/sessions/${roomName}`,
         { method: "POST" });
     const tokenResponse = await fetch(`http://100.90.25.32:8080/api/sessions/${roomName}/connections`,
