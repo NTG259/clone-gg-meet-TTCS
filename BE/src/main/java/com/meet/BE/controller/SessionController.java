@@ -15,8 +15,8 @@ public class SessionController {
     }
 
     @PostMapping("/{room}")
-    public String createSession(@PathVariable String room) throws Exception {
-
+    public String createSession(@PathVariable("room") String room) throws Exception {
+        String a = room;
         SessionProperties properties = new SessionProperties.Builder()
                 .customSessionId(room)
                 .build();
@@ -27,7 +27,7 @@ public class SessionController {
     }
 
     @PostMapping("/{room}/connections")
-    public String createConnection(@PathVariable String room) throws Exception {
+    public String createConnection(@PathVariable("room") String room) throws Exception {
 
         Session session = openVidu.getActiveSession(room);
 
@@ -35,8 +35,7 @@ public class SessionController {
             session = openVidu.createSession(
                     new SessionProperties.Builder()
                             .customSessionId(room)
-                            .build()
-            );
+                            .build());
         }
 
         Connection connection = session.createConnection();
