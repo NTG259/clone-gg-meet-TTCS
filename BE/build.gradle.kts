@@ -26,11 +26,15 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-//	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("io.livekit:livekit-server:0.12.1")
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("com.google.api-client:google-api-client:2.2.0")
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
 	implementation("org.springframework.boot:spring-boot-starter-websocket")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation ("org.springframework.boot:spring-boot-starter")
+	implementation ("org.springframework.boot:spring-boot-starter-security-oauth2-client")
+	testImplementation ("org.springframework.boot:spring-boot-starter-security-oauth2-client-test")
 	runtimeOnly ("com.mysql:mysql-connector-j")
 	testImplementation ("org.springframework.boot:spring-boot-starter-test")
 	implementation("io.openvidu:openvidu-java-client:2.32.1")
