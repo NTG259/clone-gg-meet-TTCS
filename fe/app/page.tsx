@@ -1,10 +1,10 @@
 import { Card } from "@/components/ui/card";
-import HeroBanner from "./components/app.hero";
+import HeroBanner from "./components/layout/app.hero";
 import { Calendar, Globe, Shield, Users, Video, Zap } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Header from "./components/app.header";
-import Footer from "./components/app.footer";
+import Header from "./components/layout/app.header";
+import Footer from "./components/layout/app.footer";
 
 export default function Home() {
   return (
