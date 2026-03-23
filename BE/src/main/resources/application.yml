@@ -12,6 +12,13 @@ spring:
         username: dev
         password: 123456
 
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com
+
 livekit:
     api-key: devkey
     api-secret: secret

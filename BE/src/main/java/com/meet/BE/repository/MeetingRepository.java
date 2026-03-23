@@ -1,7 +1,10 @@
 package com.meet.BE.repository;
 
-import com.meet.BE.domain.entity.Meeting;
+import com.meet.BE.domain.entity.Room;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MeetingRepository extends JpaRepository<Meeting, Long> {
+import java.util.Optional;
+
+public interface MeetingRepository extends JpaRepository<Room, Long> {
+    Optional<Object> findByRoomCode(String roomCode);
 }
