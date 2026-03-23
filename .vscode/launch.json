@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "com.meet.BE.Application",
+            "projectName": "BE"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-BeApplication<BE>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
