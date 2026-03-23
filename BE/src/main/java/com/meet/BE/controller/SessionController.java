@@ -28,6 +28,10 @@ public class SessionController {
 
     @PostMapping("/{room}/connections")
     public String createConnection(@PathVariable String room) throws Exception {
+        // validate room ?
+        // search exists room
+        // -> waiting
+        // -> join
 
         Session session = openVidu.getActiveSession(room);
 
