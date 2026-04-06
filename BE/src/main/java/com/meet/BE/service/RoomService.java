@@ -37,7 +37,7 @@ public class RoomService {
     @Value("${livekit.ws-url}")
     private String livekitWsUrl;
 
-    private final MeetingRepository meetingRepository;
+    private final RoomRe meetingRepository;
 
     private RoomServiceClient roomServiceClient() {
         return RoomServiceClient.createClient(livekitHost, apiKey, apiSecret);
@@ -117,7 +117,7 @@ public class RoomService {
     }
 
     public RoomConnectionResponse joinRoom(JoinRoomRequest request) {
-        Room existingRoom = (Room) meetingRepository.findByRoomCode(request.getRoomCode())
+        Room existingRoom = (Room) ro.findByRoomCode(request.getRoomCode())
                 .orElseThrow(() -> new BusinessException(ErrorCode.ROOM_NOT_FOUND));
 
         String token = createParticipantToken(request.getRoomCode(), request.getParticipantName(), false);

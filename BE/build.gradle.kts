@@ -1,6 +1,6 @@
 plugins {
     java
-    id("org.springframework.boot") version "4.0.3" // Lưu ý: Hiện tại Spring Boot bản ổn định mới nhất là 3.x, nếu bạn gặp lỗi build thì hãy hạ xuống bản 3.2.x hoặc 3.3.x nhé
+    id("org.springframework.boot") version "4.0.3"
     id("io.spring.dependency-management") version "1.1.7"
 }
 
