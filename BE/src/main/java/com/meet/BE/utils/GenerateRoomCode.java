@@ -14,8 +14,4 @@ public class GenerateRoomCode {
         return "" + CHARS.charAt(RANDOM.nextInt(CHARS.length()))
                 + CHARS.charAt(RANDOM.nextInt(CHARS.length()));
     }
-
-    public static void main(String[] args) {
-        System.out.println(generateCode());
-    }
 }

@@ -7,10 +7,15 @@ spring:
             ddl-auto: update
         show-sql: true
 
+    # datasource:
+    #     url: jdbc:mysql://192.168.10.207:3306/kallio
+    #     username: dev
+    #     password: 123456
+    
     datasource:
-        url: jdbc:mysql://192.168.10.207:3306/kallio
-        username: dev
-        password: 123456
+        url: jdbc:mysql://localhost:3306/kallio
+        username: root
+        password: 12345678
 
     security:
         oauth2:
@@ -24,3 +29,9 @@ livekit:
     api-secret: secret
     host: http://192.168.10.207:7880
     ws-url: ws://192.168.10.207:7880
+
+
+jwt:
+    
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration: 8640000000

@@ -1,10 +1,11 @@
 package com.meet.BE.domain.entity;
 
+import com.meet.BE.domain.enums.AuthProvider;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.security.AuthProvider;
 
 
 @Entity
@@ -31,6 +32,9 @@ public class User {
 
     // Mật khẩu có thể null nếu đăng nhập bằng Google
     private String password;
+
+    public void setProvider(String google) {
+    }
 
     // ... các trường khác (role, created_at...)
 }
