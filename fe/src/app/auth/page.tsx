@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { Video, Mail, Lock, User, ArrowLeft } from 'lucide-react';
+import { Video, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/layout/ThemeToggle';
